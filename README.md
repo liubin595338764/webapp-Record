@@ -18,6 +18,7 @@
 - 给div标签加上'cursor:pointer;'样式；
 - 将`click`事件委托到非`body`,`document`上；
 
+----
 
 ## translate(-50%,0)的bug
 ```
@@ -49,3 +50,5 @@
 }
 ```
 果然能正常显示。
+
+----
