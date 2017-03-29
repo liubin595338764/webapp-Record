@@ -1,0 +1,32 @@
+@import "../function.scss";
+/* flex栅格化 */
+
+.m-cell-title{
+    margin: 0;
+    height: rem(70px);
+    line-height: rem(70px);
+    padding: 0 rem(30px);
+    font-size: rem(30px);
+    color: #999;
+}
+.m-cell{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flexbox;
+    display: -moz-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items:center;
+    background-color: #fff;
+    padding: 0 rem(30px);
+    height: rem(90px);
+    .m-cell-body{
+        -webkit-box-flex:1;
+        -moz-box-flex:1;
+        -webkit-flex:1;
+        flex:1;
+    }
+    .m-cell-footer{
+        color: #999;
+    }
+}

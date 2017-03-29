@@ -1,0 +1,60 @@
+@import "../function.scss";
+@import "../variable.scss";
+/* button栅格化 */
+button{
+    &.m-btn:not(.m-btn-mini){
+        width: 100%;
+    }
+}
+.m-btn{
+    display: block;
+    border: 0;
+    border-radius: rem(10px);
+    height: rem(90px);
+    text-align: center;
+    font-size: rem(30px);
+    color: #fff;
+    background-color: $red;
+    box-sizing:border-box;
+    outline: none;
+    vertical-align: middle;
+    &:not(button){
+        line-height: rem(90px);
+    }
+    &.active:not([disabled]){
+        box-shadow: 0 0 999px rgba(0,0,0,.15) inset;
+    }
+    &.load{
+        box-shadow: 0 0 999px rgba(0,0,0,.15) inset;
+        opacity: .65;
+    }
+
+    &[disabled]{
+        background: $gray;
+        color: #999;
+    }
+}
+.m-btn-default{
+    @extend .m-btn;
+    background-color: $gray-light;
+    border: 1px solid $gray;
+    color: #333;
+}
+.m-btn-mini{
+    display: inline-block;
+    height: rem(60px);
+    padding: 0 1em;
+    &:not(button){
+        line-height: rem(60px);
+    }
+}
+
+
+
+
+
+
+
+
+
+

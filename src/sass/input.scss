@@ -1,0 +1,63 @@
+@import "../function.scss";
+@import "../variable.scss";
+/* button栅格化 */
+.m-check_label{
+    position: relative;
+    .m-checkbox{
+        -webkit-appearance: checkbox;
+        position: absolute;
+        left: -9990px;
+        top: 0;
+
+        &:checked+.icon-duoxy::before{
+            content: "\e93d";
+            color: $red;
+        }
+    }
+    .icon-duoxy{
+        margin-right: .5em;
+        font-size: rem(32px);
+    }
+}
+.m-radio_label{
+    position: relative;
+    .m-radio{
+        -webkit-appearance: radio;
+        position: absolute;
+        left: -9990px;
+        top: 0;
+
+        &:checked+.icon-danxy::before{
+            color: $red;
+            content: "\e93a";
+        }
+    }
+    .icon-danxy{
+        margin-right: .5em;
+        font-size: rem(32px);
+    }
+}
+input.input{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    -webkit-appearance: none;
+    background-color: transparent;
+    font-size: inherit;
+    color: inherit;
+}
+.m-verify_btn{
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    right: 0;
+    width: rem(250px);
+    height: 100%;
+    border-radius: 0;
+    padding: rem(10px) 0;
+    text-align: center;
+    display: block;
+}
+
+
+

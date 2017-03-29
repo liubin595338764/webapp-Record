@@ -1,0 +1,10 @@
+.list{
+    background-color: #fff;
+    .m-cell{
+        border-bottom: 1px solid #eee;
+
+        &:last-child{
+            border-bottom: 0;
+        }
+    }
+}

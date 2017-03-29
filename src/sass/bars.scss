@@ -1,0 +1,26 @@
+@import "../function.scss";
+.m-bar{
+    display: block;
+    height: rem(90px);
+    line-height: rem(90px);
+    padding: 0 rem(30px);
+    border-bottom: 1px solid #eee;
+    color: #414141;
+    font-size: rem(32px);
+
+    &.disabled{
+        background-color: #eee;
+        color: #aaa;
+    }
+
+    &::before{
+        float: right;
+        content: "\e912";
+        font-family: icomoon!important;
+        line-height: rem(90px);
+        opacity: .5;
+    }
+    .active{
+        box-shadow: 0 0 999px rgba(0,0,0,.12) inset;
+    }
+}
